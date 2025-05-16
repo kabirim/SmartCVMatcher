@@ -26,17 +26,6 @@ SmartCVMatcher est une application d’intelligence artificielle permettant de *
 
 ---
 
-![image](https://github.com/user-attachments/assets/b57fe978-b709-4424-a951-d8d03638017b)
-
-📁 SmartCVMatcher/
-├── siamese_model.pt              # Modèle entraîné
-├── sentence_encoder.joblib       # SentenceTransformer encodé
-├── app.py                        # Interface Streamlit
-├── train_model.py                # Script d'entraînement du modèle
-├── Job_Descriptions_and_Resumes.csv  # Jeu de données d’entraînement
-├── README.md                     # Documentation
-
-
 ## Exemple d’utilisation
 Offre d’emploi : Data Scientist avec expérience Python, NLP, Machine Learning
 
