@@ -1,12 +1,20 @@
 model:
-  name: siamese
-  hidden_dim: 256
+  name: all-mpnet-base-v2
 
 training:
-  batch_size: 32
-  epochs: 5
-  learning_rate: 0.0001
+  objective: binary:logistic
+  eval_metric: logloss
+  use_label_encoder: False
+  n_estimators: 200 
+  max_depth: 10
+  learning_rate: 0.07
+  subsample: 0.8
+  colsample_bytree: 0.8
 
 data:
   test_size: 0.2
   random_seed: 42
+
+urls:
+  train_url : "https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit/resolve/main/train.csv"
+  test_url  : "https://huggingface.co/datasets/cnamuangtoun/resume-job-description-fit/resolve/main/test.csv"

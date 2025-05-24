@@ -3,15 +3,16 @@ channels:
   - defaults
   - conda-forge
 dependencies:
-  - python=3.10
+  - python=3.12.9
   - pip
-  - pytorch
-  - torchvision
-  - torchaudio
-  - cpuonly  # à enlever si GPU disponible
   - pip:
     - sentence-transformers
     - scikit-learn
     - streamlit
     - pandas
     - joblib
+    - xgboost
+    - numpy
+    - yaml
+    - requests
+
